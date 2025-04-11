@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edwin Omega Baidoo Examination</title>
+  <script src="scripts/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+
+    <!-- Assets -->
+    <a-assets>
+      <a-asset-item id="house" src="Fie/scene.gltf"></a-asset-item>
+      <a-asset-item id="car" src="wagon/scene.gltf"></a-asset-item>
+    </a-assets-item id="garden" src="./wagon/garden_cement_fence_wall_building.glb"></a-asset-item>
+    </a-assets>
+
+    <!-- Environment -->
+    <a-sky src="Sky Background-56.jpg"></a-sky>
+    <a-box rotation="-90 0 0" width="1000" height="1000" position="0 -1 0" repeat="190 190" src="pavement-3147099_1280.jpg"></a-box>     
+
+
+    <!-- Camera -->
+    <a-camera position="0 5 50" look-controls wasd-controls></a-camera>
+    <!-- House -->
+    <a-entity 
+      gltf-model="#house" 
+      position="0 0 0" 
+      rotation=""
+      scale="4 4 4"
+    ></a-entity>
+
+    <a-entity
+    src="#garden"
+    position="5 5 -4"
+    scale="20 20 20"
+    ></a-entity>
+
+    <!-- Car -->
+    <a-entity 
+      gltf-model="#car" 
+      position="-12 0 40" 
+      rotation="0 180 0"
+      scale="3 3 3"
+    ></a-entity>
+
+<!-- Front Fence Walls -->
+<a-entity gltf-model="#garden" position="-16.4 0 15" scale="2 2 2" rotation="0 180 0"></a-entity>
+<a-entity gltf-model="#garden" position="15.8 0 15" scale="2 2 2" rotation="0 180 0"></a-entity>
+<a-entity gltf-model="#garden" position="31.5 0 15" scale="2 2 2" rotation="0 180 0"></a-entity>
+<a-entity gltf-model="#garden" position="43.5 0 15" scale="1.5 2 2" rotation="0 180 0"></a-entity>
+
+<!-- Left Side Fence Walls -->
+<a-entity gltf-model="#garden" position="-30.3 0 13.3" scale="2 2 2" rotation="0 90 0"></a-entity>
+<a-entity gltf-model="#garden" position="-30.3 0 -2.5" scale="2 2 2" rotation="0 90 0"></a-entity>
+<a-entity gltf-model="#garden" position="-30.3 0 -10" scale="2 2 2" rotation="0 90 0"></a-entity>
+
+<!-- Right Side Fence Walls -->
+<a-entity gltf-model="#garden" position="44.6 0 0" scale="2 2 2" rotation="0 -90 0"></a-entity>
+<a-entity gltf-model="#garden" position="44.5 0 -15" scale="2 2 2" rotation="0 -90 0"></a-entity>
+<a-entity gltf-model="#garden" position="44.4 0 -24" scale="0.9 2 2" rotation="0 -90 0"></a-entity>
+
+<!-- Back Fence Walls -->
+<a-entity gltf-model="#garden" position="3 0 -24.5" scale="2 2 2" rotation="0 0 0"></a-entity>
+<a-entity gltf-model="#garden" position="-28.8 0 -24.5" scale="2 2 2" rotation="0 0 0"></a-entity>
+<a-entity gltf-model="#garden" position="-13 0 -24.5" scale="2 2 2" rotation="0 0 0"></a-entity>
+<a-entity gltf-model="#garden" position="16 0 -24.5" scale="2 2 2" rotation="0 0 0"></a-entity>
+<a-entity gltf-model="#garden" position="30 0 -24.5" scale="2 2 2" rotation="0 0 0"></a-entity>
+</a-entity>
+
+
+  </a-scene>
+</body>
+</html>
